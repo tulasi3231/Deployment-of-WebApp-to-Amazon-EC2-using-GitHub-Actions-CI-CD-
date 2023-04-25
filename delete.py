@@ -18,6 +18,6 @@ def delete_artist():
         st.success("Artist has been deleted successfully")
     new_result = view_all_artist_data()
     df2 = pd.DataFrame(new_result,
-                       columns=['artist_id' , 'artist_name', 'PIN','city','street','DOB','Age','gallery_id'])
+                       columns=['artist_id' , 'artist__name', 'PIN','city','street','DOB','Age','gallery_id'])
     with st.expander("Updated details"):
         st.dataframe(df2)
